@@ -458,6 +458,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -533,6 +534,7 @@
         <span class="skill-tag">STM32</span>
         <span class="skill-tag">Arduino</span>
         <span class="skill-tag">Embedded C</span>
+        <span class="skill-tag">Python</span>
         <span class="skill-tag">Mechatronics</span>
         <span class="skill-tag">Machine Vision</span>
       </div>
@@ -577,28 +579,9 @@
       <div class="project-arrow">→</div>
     </a>
 
-    <a class="project-item" href="https://asmedigitalcollection.asme.org/IMECE/proceedings-abstract/IMECE2022/86670/V005T07A073/1157109" target="_blank">
-      <div>
-        <div class="project-num">002</div>
-        <div class="project-name">Aerial Vehicle Rapid 3D Map Generation for Safe Landing Area Detection</div>
-        <div class="project-desc">Designed and built a compact multi-sensor LiDAR scanning turret mounted on a 3DOF pan-tilt mechanism to help aerial vehicles identify safe autonomous landing zones. A 9DOF IMU provided angular feedback for servo control accuracy, while ICP stitched multiple point clouds into a full 3D terrain map. MSAC plane segmentation then classified flat, wall, and non-flat surfaces. Variable voxelization (1×1, 5×5, 10×10) was benchmarked to find the optimal speed/accuracy trade-off for onboard real-time use. Published at ASME IMECE 2022, University of Hartford Autonomous Mobile Robotics Lab.</div>
-        <div class="project-tags">
-          <span class="project-tag">LiDAR</span>
-          <span class="project-tag">3D Point Clouds</span>
-          <span class="project-tag">ICP</span>
-          <span class="project-tag">MSAC / RANSAC</span>
-          <span class="project-tag">IMU</span>
-          <span class="project-tag">Servo Control</span>
-          <span class="project-tag">Voxelization</span>
-          <span class="project-tag">MATLAB</span>
-        </div>
-      </div>
-      <div class="project-arrow">→</div>
-    </a>
-
     <div class="project-item project-item-expanded">
       <div>
-        <div class="project-num">003</div>
+        <div class="project-num">002</div>
         <div class="project-name">UR10e 6-DOF Robot Kinematics — MuJoCo Simulation</div>
         <div class="project-desc">Implemented forward and inverse kinematics (position & velocity) from scratch for the Universal Robots UR10e manipulator inside a MuJoCo physics simulation. Derived transformation matrices from DH parameters, solved nonlinear IK using scipy, computed the Jacobian for velocity mapping, and implemented a PD torque controller for stable joint-angle tracking. Co-developed with Aadhav Sivakumar for NYU Foundations of Robotics (ROB-GY 6003), Fall 2025.</div>
         <div class="project-tags">
@@ -627,6 +610,50 @@
           <div class="project-gif-item">
             <img src="Part4-ezgif.com-optimize.gif" alt="Part 4 – Inverse Kinematics Velocity" loading="lazy">
             <div class="project-gif-label">Pt 4 — IK Velocity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-item project-item-expanded">
+      <div>
+        <div class="project-num">003</div>
+        <div class="project-name">Aerial Vehicle Rapid 3D Map Generation for Safe Landing Area Detection</div>
+        <div class="project-desc">Designed and built a compact multi-sensor LiDAR scanning turret mounted on a 3DOF pan-tilt mechanism to help aerial vehicles identify safe autonomous landing zones. A 9DOF IMU provided angular feedback for servo control accuracy, while ICP stitched multiple point clouds into a full 3D terrain map. MSAC plane segmentation classified flat, wall, and non-flat surfaces. Variable voxelization (1×1, 5×5, 10×10) was benchmarked for optimal speed/accuracy trade-off. Published at ASME IMECE 2022, University of Hartford Autonomous Mobile Robotics Lab.</div>
+        <div class="project-tags">
+          <span class="project-tag">LiDAR</span>
+          <span class="project-tag">3D Point Clouds</span>
+          <span class="project-tag">ICP</span>
+          <span class="project-tag">MSAC / RANSAC</span>
+          <span class="project-tag">IMU</span>
+          <span class="project-tag">Servo Control</span>
+          <span class="project-tag">Voxelization</span>
+          <span class="project-tag">MATLAB</span>
+        </div>
+        <div class="project-gifs" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="project-gif-item">
+            <img src="lidar1.png" alt="LiDAR turret home position" loading="lazy">
+            <div class="project-gif-label">Turret — Home Position</div>
+          </div>
+          <div class="project-gif-item">
+            <img src="lidar2.png" alt="Upper & lower servo rotation" loading="lazy">
+            <div class="project-gif-label">Servo Rotations</div>
+          </div>
+          <div class="project-gif-item">
+            <img src="lidar3.png" alt="Single position 3D point cloud scan" loading="lazy">
+            <div class="project-gif-label">Single Position Scan</div>
+          </div>
+          <div class="project-gif-item">
+            <img src="lidar4.png" alt="Individual point clouds to be stitched" loading="lazy">
+            <div class="project-gif-label">Individual Point Clouds</div>
+          </div>
+          <div class="project-gif-item">
+            <img src="lidar5.png" alt="Stitched point cloud map" loading="lazy">
+            <div class="project-gif-label">Stitched Point Cloud</div>
+          </div>
+          <div class="project-gif-item">
+            <img src="lidar6.png" alt="Voxelized plane segmentation" loading="lazy">
+            <div class="project-gif-label">Plane Segmentation</div>
           </div>
         </div>
       </div>
@@ -671,12 +698,23 @@
         <div class="exp-detail">Designing and testing military jet and commercial engine components for F135, F119, PW4000, PW2000, and F117 engines. Led a team of three engineers on F135/F119 inspection documentation, improving process efficiency by 30% and doubling project size. Conducted GD&T analysis for F135 STOVL 3BSM limits, performed root cause analysis on nonconforming parts, and built Excel tools for bearing shear stress and tolerance stack calculations. Used Siemens NX for 3D modeling and structural analysis.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <span class="section-title">Education</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="exp-list">
     <div class="exp-item reveal">
       <div class="exp-date">2026 — Present</div>
       <div>
         <div class="exp-role">M.S. Mechatronics &amp; Robotics</div>
         <div class="exp-company">NYU Tandon School of Engineering</div>
-        <div class="exp-detail">Relevant coursework: Mechatronics (ROB-GY 5103), Robotics, Embedded Systems, Control Systems, Sensor Fusion. Projects include a real-time wearable posture monitoring system built on the STM32H503RB platform.</div>
+        <div class="exp-detail">Relevant coursework: Mechatronics (ROB-GY 5103), Foundations of Robotics (ROB-GY 6003), Embedded Systems, Control Systems, Sensor Fusion. Projects include a real-time wearable posture monitoring system and UR10e kinematics simulation.</div>
       </div>
     </div>
     <div class="exp-item reveal">
@@ -693,7 +731,7 @@
 <!-- Contact -->
 <section id="contact">
   <div class="section-header reveal">
-    <span class="section-num">05</span>
+    <span class="section-num">06</span>
     <span class="section-title">Contact</span>
     <div class="section-rule"></div>
   </div>
@@ -719,7 +757,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 <span>Bernard Balko</span></p>
+  <p>© 2026 <span>Bernard Balko</span></p>
   <p>Mechatronics &amp; Robotics Engineer</p>
 </footer>
 
