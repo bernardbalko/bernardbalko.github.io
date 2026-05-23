@@ -499,7 +499,7 @@
     </h2>
     <div class="about-body reveal">
       <p>I'm a robotics graduate student with a background in mechanical design. Before starting my M.S. at NYU Tandon, I spent over three years at Quest Global supporting Pratt & Whitney — working on military jet and commercial engine components across F135, F119, PW4000, and F117 programs.</p>
-      <p>My work bridges precision mechanical design — GD&T analysis, FEA, quality control for jet engines — with hands-on robotics: wearable embedded systems, LiDAR-based 3D mapping, and published research in autonomous aerial vehicles.</p>
+      <p>My work bridges precision mechanical design — GD&T analysis, FEA, and quality control for jet engines — with hands-on robotics: embedded systems, computer vision, and published research in autonomous systems.</p>
       <p>I thrive at the intersection of hardware and software, turning complex engineering problems into reliable, well-documented solutions.</p>
     </div>
   </div>
@@ -515,6 +515,7 @@
         <span class="skill-tag">Jacobian</span>
         <span class="skill-tag">DH Parameters</span>
         <span class="skill-tag">PD Control</span>
+        <span class="skill-tag">Proportional Control</span>
         <span class="skill-tag">Sensor Fusion</span>
         <span class="skill-tag">MuJoCo</span>
       </div>
@@ -526,6 +527,8 @@
         <span class="skill-tag">Arduino</span>
         <span class="skill-tag">Embedded C</span>
         <span class="skill-tag">I2C / ADC</span>
+        <span class="skill-tag">PWM</span>
+        <span class="skill-tag">PySerial</span>
         <span class="skill-tag">IMU (MPU6050)</span>
         <span class="skill-tag">Signal Filtering</span>
       </div>
@@ -562,6 +565,8 @@
     <div class="skill-item">
       <div class="skill-category">Perception & Vision</div>
       <div class="skill-tags">
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">Haar Cascade</span>
         <span class="skill-tag">LiDAR</span>
         <span class="skill-tag">ICP</span>
         <span class="skill-tag">MSAC / RANSAC</span>
@@ -652,6 +657,30 @@
     <div class="project-item project-item-expanded">
       <div>
         <div class="project-num">003</div>
+        <div class="project-name">Face-Tracking Pan/Tilt Turret — Computer Vision & Embedded Control</div>
+        <div class="project-desc">A fully integrated mechatronic system that detects a human face in a live camera feed and physically steers a dual-axis pan/tilt servo turret to keep it centered in real time. A Python/OpenCV vision pipeline running on macOS communicates with an STM32 Nucleo microcontroller over 115,200-baud serial, forming a closed feedback loop from pixel space to physical motor movement. A proportional controller scales servo velocity with tracking error, a 15-pixel deadzone eliminates servo jitter, and PWM saturation clamping (1000–2000μs) protects hardware from over-rotation.</div>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">OpenCV</span>
+          <span class="project-tag">Haar Cascade</span>
+          <span class="project-tag">STM32</span>
+          <span class="project-tag">Embedded C</span>
+          <span class="project-tag">PySerial</span>
+          <span class="project-tag">Proportional Control</span>
+          <span class="project-tag">PWM</span>
+        </div>
+        <div class="project-gifs" style="grid-template-columns: 1fr; margin-top: 1.5rem;">
+          <div class="project-gif-item" style="aspect-ratio: 16/9;">
+            <video src="face_tracker.mp4" loop playsinline controls style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+            <div class="project-gif-label">Live Demo — Face Tracking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-item project-item-expanded">
+      <div>
+        <div class="project-num">004</div>
         <div class="project-name">Aerial Vehicle Rapid 3D Map Generation for Safe Landing Area Detection</div>
         <div class="project-desc">Designed and built a compact multi-sensor LiDAR scanning turret mounted on a 3DOF pan-tilt mechanism to help aerial vehicles identify safe autonomous landing zones. A 9DOF IMU provided angular feedback for servo control accuracy, while ICP stitched multiple point clouds into a full 3D terrain map. MSAC plane segmentation classified flat, wall, and non-flat surfaces. Variable voxelization (1×1, 5×5, 10×10) was benchmarked for optimal speed/accuracy trade-off. Published at ASME IMECE 2022, University of Hartford Autonomous Mobile Robotics Lab.</div>
         <div class="project-tags">
@@ -729,7 +758,7 @@
       <div>
         <div class="exp-role">Mechanical Design Engineer</div>
         <div class="exp-company">Quest Global — Pratt &amp; Whitney (Remote)</div>
-        <div class="exp-detail">Designing and testing military jet and commercial engine components for F135, F119, PW4000, PW2000, and F117 engines. Led a team of three engineers on F135/F119 inspection documentation, improving process efficiency by 30% and doubling project size. Conducted GD&T analysis for F135 STOVL 3BSM limits, performed root cause analysis on nonconforming parts, and built Excel tools for bearing shear stress and tolerance stack calculations. Used Siemens NX for 3D modeling and structural analysis.</div>
+        <div class="exp-detail">Mechanical design and quality engineering for military and commercial jet engine components at Pratt & Whitney. Led a team of three engineers on engine inspection documentation, improving process efficiency by 30% and doubling project scope. Conducted GD&T analysis on engine components, identifying risks and developing mitigation strategies to improve product reliability. Performed root cause analysis on nonconforming parts and implemented corrective actions through cross-functional collaboration with structural, manufacturing, and aero engineering teams. Built custom Excel tools for bearing shear stress and tolerance stack-up calculations, and used Siemens NX for 3D modeling and structural analysis.</div>
       </div>
     </div>
   </div>
